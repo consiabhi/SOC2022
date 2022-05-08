@@ -1,0 +1,267 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.socserif{font-family:serif}.socsans-serif{font-family:sans-serif}.soccursive{font-family:cursive}.socmonospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.socwide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.socimage{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.soctable,.soctable-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.soctable-all{border:1px solid #ccc}
+.socbordered tr,.soctable-all tr{border-bottom:1px solid #ddd}.socstriped tbody tr:nth-child(even){background-color:#f1f1f1}
+.soctable-all tr:nth-child(odd){background-color:#fff}.soctable-all tr:nth-child(even){background-color:#f1f1f1}
+.sochoverable tbody tr:hover,.socul.sochoverable li:hover{background-color:#ccc}.soccentered tr th,.soccentered tr td{text-align:center}
+.soctable td,.soctable th,.soctable-all td,.soctable-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.soctable th:first-child,.soctable td:first-child,.soctable-all th:first-child,.soctable-all td:first-child{padding-left:16px}
+.socbtn,.socbutton{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.socbtn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.socbtn,.socbutton{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.socdisabled,.socbtn:disabled,.socbutton:disabled{cursor:not-allowed;opacity:0.3}.socdisabled *,:disabled *{pointer-events:none}
+.socbtn.socdisabled:hover,.socbtn:disabled:hover{box-shadow:none}
+.socbadge,.soctag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.socbadge{border-radius:50%}
+.socul{list-style-type:none;padding:0;margin:0}.socul li{padding:8px 16px;border-bottom:1px solid #ddd}.socul li:last-child{border-bottom:none}
+.soctooltip,.socdisplay-container{position:relative}.soctooltip .soctext{display:none}.soctooltip:hover .soctext{display:inline-block}
+.socripple:active{opacity:0.5}.socripple{transition:opacity 0s}
+.socinput{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.socselect{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.socdropdown-click,.socdropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.socdropdown-hover:hover .socdropdown-content{display:block}
+.socdropdown-hover:first-child,.socdropdown-click:hover{background-color:#ccc;color:#000}
+.socdropdown-hover:hover > .socbutton:first-child,.socdropdown-click:hover > .socbutton:first-child{background-color:#ccc;color:#000}
+.socdropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.soccheck,.socradio{width:24px;height:24px;position:relative;top:6px}
+.socsidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.socbar-block .socdropdown-hover,.socbar-block .socdropdown-click{width:100%}
+.socbar-block .socdropdown-hover .socdropdown-content,.socbar-block .socdropdown-click .socdropdown-content{min-width:100%}
+.socbar-block .socdropdown-hover .socbutton,.socbar-block .socdropdown-click .socbutton{width:100%;text-align:left;padding:8px 16px}
+.socmain,#main{transition:margin-left .4s}
+.socmodal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.socmodal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.socbar{width:100%;overflow:hidden}.soccenter .socbar{display:inline-block;width:auto}
+.socbar .socbar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.socbar .socdropdown-hover,.socbar .socdropdown-click{position:static;float:left}
+.socbar .socbutton{white-space:normal}
+.socbar-block .socbar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.socbar-block.soccenter .socbar-item{text-align:center}.socblock{display:block;width:100%}
+.socresponsive{display:block;overflow-x:auto}
+.soccontainer:after,.soccontainer:before,.socpanel:after,.socpanel:before,.socrow:after,.socrow:before,.socrow-padding:after,.socrow-padding:before,
+.soccell-row:before,.soccell-row:after,.socclear:after,.socclear:before,.socbar:before,.socbar:after{content:"";display:table;clear:both}
+.soccol,.sochalf,.socthird,.soctwothird,.socthreequarter,.socquarter{float:left;width:100%}
+.soccol.s1{width:8.33333%}.soccol.s2{width:16.66666%}.soccol.s3{width:24.99999%}.soccol.s4{width:33.33333%}
+.soccol.s5{width:41.66666%}.soccol.s6{width:49.99999%}.soccol.s7{width:58.33333%}.soccol.s8{width:66.66666%}
+.soccol.s9{width:74.99999%}.soccol.s10{width:83.33333%}.soccol.s11{width:91.66666%}.soccol.s12{width:99.99999%}
+@media (min-width:601px){.soccol.m1{width:8.33333%}.soccol.m2{width:16.66666%}.soccol.m3,.socquarter{width:24.99999%}.soccol.m4,.socthird{width:33.33333%}
+.soccol.m5{width:41.66666%}.soccol.m6,.sochalf{width:49.99999%}.soccol.m7{width:58.33333%}.soccol.m8,.soctwothird{width:66.66666%}
+.soccol.m9,.socthreequarter{width:74.99999%}.soccol.m10{width:83.33333%}.soccol.m11{width:91.66666%}.soccol.m12{width:99.99999%}}
+@media (min-width:993px){.soccol.l1{width:8.33333%}.soccol.l2{width:16.66666%}.soccol.l3{width:24.99999%}.soccol.l4{width:33.33333%}
+.soccol.l5{width:41.66666%}.soccol.l6{width:49.99999%}.soccol.l7{width:58.33333%}.soccol.l8{width:66.66666%}
+.soccol.l9{width:74.99999%}.soccol.l10{width:83.33333%}.soccol.l11{width:91.66666%}.soccol.l12{width:99.99999%}}
+.socrest{overflow:hidden}.socstretch{margin-left:-16px;margin-right:-16px}
+.soccontent,.socauto{margin-left:auto;margin-right:auto}.soccontent{max-width:980px}.socauto{max-width:1140px}
+.soccell-row{display:table;width:100%}.soccell{display:table-cell}
+.soccell-top{vertical-align:top}.soccell-middle{vertical-align:middle}.soccell-bottom{vertical-align:bottom}
+.sochide{display:none!important}.socshow-block,.socshow{display:block!important}.socshow-inline-block{display:inline-block!important}
+@media (max-width:1205px){.socauto{max-width:95%}}
+@media (max-width:600px){.socmodal-content{margin:0 10px;width:auto!important}.socmodal{padding-top:30px}
+.socdropdown-hover.socmobile .socdropdown-content,.socdropdown-click.socmobile .socdropdown-content{position:relative}	
+.sochide-small{display:none!important}.socmobile{display:block;width:100%!important}.socbar-item.socmobile,.socdropdown-hover.socmobile,.socdropdown-click.socmobile{text-align:center}
+.socdropdown-hover.socmobile,.socdropdown-hover.socmobile .socbtn,.socdropdown-hover.socmobile .socbutton,.socdropdown-click.socmobile,.socdropdown-click.socmobile .socbtn,.socdropdown-click.socmobile .socbutton{width:100%}}
+@media (max-width:768px){.socmodal-content{width:500px}.socmodal{padding-top:50px}}
+@media (min-width:993px){.socmodal-content{width:900px}.sochide-large{display:none!important}.socsidebar.soccollapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.sochide-medium{display:none!important}}
+@media (max-width:992px){.socsidebar.soccollapse{display:none}.socmain{margin-left:0!important;margin-right:0!important}.socauto{max-width:100%}}
+.soctop,.socbottom{position:fixed;width:100%;z-index:1}.soctop{top:0}.socbottom{bottom:0}
+.socoverlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.socdisplay-topleft{position:absolute;left:0;top:0}.socdisplay-topright{position:absolute;right:0;top:0}
+.socdisplay-bottomleft{position:absolute;left:0;bottom:0}.socdisplay-bottomright{position:absolute;right:0;bottom:0}
+.socdisplay-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.socdisplay-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.socdisplay-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.socdisplay-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.socdisplay-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.socdisplay-container:hover .socdisplay-hover{display:block}.socdisplay-container:hover span.socdisplay-hover{display:inline-block}.socdisplay-hover{display:none}
+.socdisplay-position{position:absolute}
+.soccircle{border-radius:50%}
+.socround-small{border-radius:2px}.socround,.socround-medium{border-radius:4px}.socround-large{border-radius:8px}.socround-xlarge{border-radius:16px}.socround-xxlarge{border-radius:32px}
+.socrow-padding,.socrow-padding>.sochalf,.socrow-padding>.socthird,.socrow-padding>.soctwothird,.socrow-padding>.socthreequarter,.socrow-padding>.socquarter,.socrow-padding>.soccol{padding:0 8px}
+.soccontainer,.socpanel{padding:0.01em 16px}.socpanel{margin-top:16px;margin-bottom:16px}
+.soccode,.soccodespan{font-family:Consolas,"courier new";font-size:16px}
+.soccode{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.soccodespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.soccard,.soccard-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.soccard-4,.sochover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.socspin{animation:socspin 2s infinite linear}@keyframes socspin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.socanimate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.socanimate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.socanimate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.socanimate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.socanimate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.socanimate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.socanimate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.socanimate-input{transition:width 0.4s ease-in-out}.socanimate-input:focus{width:100%!important}
+.socopacity,.sochover-opacity:hover{opacity:0.60}.socopacity-off,.sochover-opacity-off:hover{opacity:1}
+.socopacity-max{opacity:0.25}.socopacity-min{opacity:0.75}
+.socgreyscale-max,.socgrayscale-max,.sochover-greyscale:hover,.sochover-grayscale:hover{filter:grayscale(100%)}
+.socgreyscale,.socgrayscale{filter:grayscale(75%)}.socgreyscale-min,.socgrayscale-min{filter:grayscale(50%)}
+.socsepia{filter:sepia(75%)}.socsepia-max,.sochover-sepia:hover{filter:sepia(100%)}.socsepia-min{filter:sepia(50%)}
+.soctiny{font-size:10px!important}.socsmall{font-size:12px!important}.socmedium{font-size:15px!important}.soclarge{font-size:18px!important}
+.socxlarge{font-size:24px!important}.socxxlarge{font-size:36px!important}.socxxxlarge{font-size:48px!important}.socjumbo{font-size:64px!important}
+.socleft-align{text-align:left!important}.socright-align{text-align:right!important}.socjustify{text-align:justify!important}.soccenter{text-align:center!important}
+.socborder-0{border:0!important}.socborder{border:1px solid #ccc!important}
+.socborder-top{border-top:1px solid #ccc!important}.socborder-bottom{border-bottom:1px solid #ccc!important}
+.socborder-left{border-left:1px solid #ccc!important}.socborder-right{border-right:1px solid #ccc!important}
+.soctopbar{border-top:6px solid #ccc!important}.socbottombar{border-bottom:6px solid #ccc!important}
+.socleftbar{border-left:6px solid #ccc!important}.socrightbar{border-right:6px solid #ccc!important}
+.socsection,.soccode{margin-top:16px!important;margin-bottom:16px!important}
+.socmargin{margin:16px!important}.socmargin-top{margin-top:16px!important}.socmargin-bottom{margin-bottom:16px!important}
+.socmargin-left{margin-left:16px!important}.socmargin-right{margin-right:16px!important}
+.socpadding-small{padding:4px 8px!important}.socpadding{padding:8px 16px!important}.socpadding-large{padding:12px 24px!important}
+.socpadding-16{padding-top:16px!important;padding-bottom:16px!important}.socpadding-24{padding-top:24px!important;padding-bottom:24px!important}
+.socpadding-32{padding-top:32px!important;padding-bottom:32px!important}.socpadding-48{padding-top:48px!important;padding-bottom:48px!important}
+.socpadding-64{padding-top:64px!important;padding-bottom:64px!important}
+.socpadding-top-64{padding-top:64px!important}.socpadding-top-48{padding-top:48px!important}
+.socpadding-top-32{padding-top:32px!important}.socpadding-top-24{padding-top:24px!important}
+.socleft{float:left!important}.socright{float:right!important}
+.socbutton:hover{color:#000!important;background-color:#ccc!important}
+.soctransparent,.sochover-none:hover{background-color:transparent!important}
+.sochover-none:hover{box-shadow:none!important}
+/* Colors */
+.socamber,.sochover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.socaqua,.sochover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.socblue,.sochover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.soclight-blue,.sochover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.socbrown,.sochover-brown:hover{color:#fff!important;background-color:#795548!important}
+.soccyan,.sochover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.socblue-grey,.sochover-blue-grey:hover,.socblue-gray,.sochover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.socgreen,.sochover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.soclight-green,.sochover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.socindigo,.sochover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.sockhaki,.sochover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.soclime,.sochover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.socorange,.sochover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.socdeep-orange,.sochover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.socpink,.sochover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.socpurple,.sochover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.socdeep-purple,.sochover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.socred,.sochover-red:hover{color:#fff!important;background-color:#f44336!important}
+.socsand,.sochover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.socteal,.sochover-teal:hover{color:#fff!important;background-color:#009688!important}
+.socyellow,.sochover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.socwhite,.sochover-white:hover{color:#000!important;background-color:#fff!important}
+.socblack,.sochover-black:hover{color:#fff!important;background-color:#000!important}
+.socgrey,.sochover-grey:hover,.socgray,.sochover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.soclight-grey,.sochover-light-grey:hover,.soclight-gray,.sochover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.socdark-grey,.sochover-dark-grey:hover,.socdark-gray,.sochover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.socpale-red,.sochover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.socpale-green,.sochover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.socpale-yellow,.sochover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.socpale-blue,.sochover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.soctext-amber,.sochover-text-amber:hover{color:#ffc107!important}
+.soctext-aqua,.sochover-text-aqua:hover{color:#00ffff!important}
+.soctext-blue,.sochover-text-blue:hover{color:#2196F3!important}
+.soctext-light-blue,.sochover-text-light-blue:hover{color:#87CEEB!important}
+.soctext-brown,.sochover-text-brown:hover{color:#795548!important}
+.soctext-cyan,.sochover-text-cyan:hover{color:#00bcd4!important}
+.soctext-blue-grey,.sochover-text-blue-grey:hover,.soctext-blue-gray,.sochover-text-blue-gray:hover{color:#607d8b!important}
+.soctext-green,.sochover-text-green:hover{color:#4CAF50!important}
+.soctext-light-green,.sochover-text-light-green:hover{color:#8bc34a!important}
+.soctext-indigo,.sochover-text-indigo:hover{color:#3f51b5!important}
+.soctext-khaki,.sochover-text-khaki:hover{color:#b4aa50!important}
+.soctext-lime,.sochover-text-lime:hover{color:#cddc39!important}
+.soctext-orange,.sochover-text-orange:hover{color:#ff9800!important}
+.soctext-deep-orange,.sochover-text-deep-orange:hover{color:#ff5722!important}
+.soctext-pink,.sochover-text-pink:hover{color:#e91e63!important}
+.soctext-purple,.sochover-text-purple:hover{color:#9c27b0!important}
+.soctext-deep-purple,.sochover-text-deep-purple:hover{color:#673ab7!important}
+.soctext-red,.sochover-text-red:hover{color:#f44336!important}
+.soctext-sand,.sochover-text-sand:hover{color:#fdf5e6!important}
+.soctext-teal,.sochover-text-teal:hover{color:#009688!important}
+.soctext-yellow,.sochover-text-yellow:hover{color:#d2be0e!important}
+.soctext-white,.sochover-text-white:hover{color:#fff!important}
+.soctext-black,.sochover-text-black:hover{color:#000!important}
+.soctext-grey,.sochover-text-grey:hover,.soctext-gray,.sochover-text-gray:hover{color:#757575!important}
+.soctext-light-grey,.sochover-text-light-grey:hover,.soctext-light-gray,.sochover-text-light-gray:hover{color:#f1f1f1!important}
+.soctext-dark-grey,.sochover-text-dark-grey:hover,.soctext-dark-gray,.sochover-text-dark-gray:hover{color:#3a3a3a!important}
+.socborder-amber,.sochover-border-amber:hover{border-color:#ffc107!important}
+.socborder-aqua,.sochover-border-aqua:hover{border-color:#00ffff!important}
+.socborder-blue,.sochover-border-blue:hover{border-color:#2196F3!important}
+.socborder-light-blue,.sochover-border-light-blue:hover{border-color:#87CEEB!important}
+.socborder-brown,.sochover-border-brown:hover{border-color:#795548!important}
+.socborder-cyan,.sochover-border-cyan:hover{border-color:#00bcd4!important}
+.socborder-blue-grey,.sochover-border-blue-grey:hover,.socborder-blue-gray,.sochover-border-blue-gray:hover{border-color:#607d8b!important}
+.socborder-green,.sochover-border-green:hover{border-color:#4CAF50!important}
+.socborder-light-green,.sochover-border-light-green:hover{border-color:#8bc34a!important}
+.socborder-indigo,.sochover-border-indigo:hover{border-color:#3f51b5!important}
+.socborder-khaki,.sochover-border-khaki:hover{border-color:#f0e68c!important}
+.socborder-lime,.sochover-border-lime:hover{border-color:#cddc39!important}
+.socborder-orange,.sochover-border-orange:hover{border-color:#ff9800!important}
+.socborder-deep-orange,.sochover-border-deep-orange:hover{border-color:#ff5722!important}
+.socborder-pink,.sochover-border-pink:hover{border-color:#e91e63!important}
+.socborder-purple,.sochover-border-purple:hover{border-color:#9c27b0!important}
+.socborder-deep-purple,.sochover-border-deep-purple:hover{border-color:#673ab7!important}
+.socborder-red,.sochover-border-red:hover{border-color:#f44336!important}
+.socborder-sand,.sochover-border-sand:hover{border-color:#fdf5e6!important}
+.socborder-teal,.sochover-border-teal:hover{border-color:#009688!important}
+.socborder-yellow,.sochover-border-yellow:hover{border-color:#ffeb3b!important}
+.socborder-white,.sochover-border-white:hover{border-color:#fff!important}
+.socborder-black,.sochover-border-black:hover{border-color:#000!important}
+.socborder-grey,.sochover-border-grey:hover,.socborder-gray,.sochover-border-gray:hover{border-color:#9e9e9e!important}
+.socborder-light-grey,.sochover-border-light-grey:hover,.socborder-light-gray,.sochover-border-light-gray:hover{border-color:#f1f1f1!important}
+.socborder-dark-grey,.sochover-border-dark-grey:hover,.socborder-dark-gray,.sochover-border-dark-gray:hover{border-color:#616161!important}
+.socborder-pale-red,.sochover-border-pale-red:hover{border-color:#ffe7e7!important}.socborder-pale-green,.sochover-border-pale-green:hover{border-color:#e7ffe7!important}
+.socborder-pale-yellow,.sochover-border-pale-yellow:hover{border-color:#ffffcc!important}.socborder-pale-blue,.sochover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 10px 10px 0px
+rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+
+}
+.dropdown-content .star {
+	display: block;
+	color:  #000000;
+	padding:  5px;
+	text-decoration:  none;
+}
+.dropdown-content .star:hover {
+	color: #FFFFFF;
+	background-color: #00A4BD;
+}
+
+.bgsubmit {
+	background-color: #F1F1F1;
+}
