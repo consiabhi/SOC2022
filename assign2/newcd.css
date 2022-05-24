@@ -1,0 +1,48 @@
+#background{
+  text-align: center;
+  position: relative;
+  background-position: 50% 50%;
+}
+#bg-text{
+  color: lightgrey;
+  opacity: 50%;
+  font-size: 320px;
+  font-family: cursive;
+}
+
+.textmain{
+
+  height:65vh;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 8%;
+  position: relative;
+}
+
+
+.content{
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: skyblue;
+
+}
+.content h1{
+  font-size: 64px;
+  font-weight: 600;
+}
+.content h1 span{
+  color: #ff3753;
+}
+.launch-time{
+  display: flex;
+}
+.launch-time div{
+  flex-basis: 120px;
+}
+.launch-time div p{
+  font-size: 60px;
+  margin-bottom: -10px;
+  text-align: left;
+}

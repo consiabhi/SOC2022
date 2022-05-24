@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Year Counter</title>
+	<link rel="stylesheet" type="text/css" href="newcd.css">
+</head>
+<body>
+
+<div class="textmain">
+	<div id="background">
+		<p id="bg-text"></p>
+	</div>
+
+	<div class="content">	
+		<h1><span>New Year</span> Countdown</h1>
+		<div class="launch-time">
+			<div>
+				<p id="days">00</p>
+				<span>Days</span>
+			</div>
+			<div>
+				<p id="hours">00</p>
+				<span>Hours</span>
+			</div>
+			<div>
+				<p id="minutes">00</p>
+				<span>Minutes</span>
+			</div>
+			<div>
+				<p id="sec">00</p>
+				<span>Seconds</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script> 
+
+	(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  // this section so don't have to keep updating every year
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "01/01/";
+    newYear = dayMonth + nextYear;
+    document.getElementById("bg-text").innerHTML = nextYear	;
+
+
+
+	var countDownDate = new Date(newYear).getTime();
+	var x = setInterval(function(){
+		var now = new Date().getTime();
+		var diff = countDownDate - now;
+
+		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+		document.getElementById("days").innerHTML = days;
+		document.getElementById("hours").innerHTML = hours;
+		document.getElementById("minutes").innerHTML = minutes;
+		document.getElementById("sec").innerHTML = seconds;
+
+		if(diff < 0){
+			clearInterval(x);
+		document.getElementById("days").innerHTML = "00";
+		document.getElementById("hours").innerHTML = "00";
+		document.getElementById("minutes").innerHTML = "00";
+		document.getElementById("sec").innerHTML = "00";
+
+		}
+
+
+	},1000)
+}());
+
+</script>
+
+
+
+</body>
+</html>
