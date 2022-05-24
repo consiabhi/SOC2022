@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cssfile.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+
+<body>
+<!-- Navbar (sit on top)  -->
+<div class="soctop">
+  <div class="socbar socwhite socpadding" style="letter-spacing:4px;">
+    <a class="socbutton">CostaRoco</a>
+    <!-- Right-sided navbar links-->
+    <div class="socright">
+      <a href="sochome.html" class=" socbutton">Home</a>
+      <a href="#menu" class="socbutton">Menu</a>
+      <a href="#feedback" class="socbutton">Feedback</a>
+    </div>
+  </div>
+</div>
+<!-- Menu Section -->
+  <div class="socrow socpadding-64" id="menu">
+    <div class="soccol l6 socpadding-large">
+      <h1 class="soccenter">Our Menu</h1><br>
+      <h4>Bread Basket</h4>
+      <p class="soctext-grey">Assortment of fresh baked fruit breads and muffins --200</p><br>
+    
+      <h4>Honey Almond Granola with Fruits</h4>
+      <p class="soctext-grey">Natural cereal of honey toasted oats, raisins, almonds and dates --450</p><br>
+    
+      <h4>Belgian Waffle</h4>
+      <p class="soctext-grey">Vanilla flavored batter with malted flour --375</p><br>
+    
+      <h4>Scrambled eggs</h4>
+      <p class="soctext-grey">Scrambled eggs, roasted red pepper and garlic, with green onions --250</p><br>
+    
+      <h4>Blueberry Pancakes</h4>
+      <p class="soctext-grey">With syrup, butter and lots of berries --700</p>    
+    </div>
+    
+    <div class="soccol l6 socpadding-large">
+      <img src="tablesetting.jpg" class="socimage" alt="Menu" style="width:60%">
+    </div>
+  </div>
+
+  <hr>
+
+ 
+  <div class="soccontainer socpadding-64" id="feedback">
+    <h1 class="soccenter">Feedback</h1><br>
+    <form target="_blank">
+      <p><input class="socinput socpadding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="socinput socpadding-16" type="text" placeholder="Your contact number" required name="phone number"></p>
+      <p><input class="socinput socpadding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p align="center">
+        <label for="rating" class="socpadding-16">How would you rate us!</label>
+        <select name="rating" id="rating">
+          <option value="1">1 Star </option>
+          <option value="2">2 Star </option>
+          <option value="3">3 Star </option>
+          <option value="4">4 Star </option>
+          <option value="5" selected>5 Star </option>     
+        </select>
+      </p>
+     
+      <p align="center"><button class="socbutton bgsubmit" type="submit">SEND FEEDBACK</button></p>
+    </form>
+  </div>
+
+  </head>
+
+
+</body>
+</html>
